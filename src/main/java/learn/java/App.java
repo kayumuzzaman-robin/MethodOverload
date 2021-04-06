@@ -13,6 +13,7 @@ public class App {
             System.out.println("calcFeetAndInchesToCentimeters: centimeter is " + calcCentimeter);
             return calcCentimeter;
         } else {
+            System.out.println("Invalid parameters!");
             return -1;
         }
     }
@@ -24,6 +25,7 @@ public class App {
             System.out.println("calcFeetAndInchesToCentimeters: feet is " + feet + " and inches is " + calcInch);
             return feet;
         } else {
+            System.out.println("Invalid parameters!");
             return -1;
         }
     }
@@ -32,6 +34,6 @@ public class App {
         System.out.println("Method Overloading");
         // variables didn't used intentionally
         double feetAndInchesToCentimeters = calcFeetAndInchesToCentimeters(6, 0);
-        double toFeet = calcFeetAndInchesToCentimeters(100);
+        double toFeet = calcFeetAndInchesToCentimeters(-90);
     }
 }
